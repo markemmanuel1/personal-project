@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs - Personal Portfolio</title>
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+<body>
+    <header class="header">
+            <a href="#" class="logo"><img src="C:\Users\Mark\OneDrive\Desktop\Mark\ADMIN\PERSONAL _PROJECT\Screenshot 2024-04-06 082017.png" alt="Image Description" class="logo"></a>        <nav class="navbar">
+            <a href="mainfile.html">HOME</a>
+            <a href="about.html">KNOW MORE</a>
+            <a href="songs.html" class="active">SONGS</a>
+            <a href="family.html">ORIGINS</a>
+            <a href="sermon.html" id="sermon-link">SERMON</a>
+        </nav>
+    </header>
+    <section class="songs">
+        <div class="songs-content">
+            <h1>Emmanuel's Top 5</h1>
+            <h3>Just As I Am</h3>
+            <p>A perfect hymn for the call to altar.... And a Billy Graham Classic.<p>
+            <div class="btn-box">
+                <a href="#" id="prev-btn-about">Previous</a>
+                <a href="#" id="next-btn-about">Next</a>
+            </div>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yuNFAB4mTn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+            <!-- Duplicate sections for songs2, songs3, songs4, songs5 with corrected embed URLs -->
+    <section class="songs">
+        <div class="songs-content">
+            <h1>Zaboor 51</h1>
+            <h3>Shubhas Gill</h3>
+            <p>Zaboor 51 (Psalm 51)-Fazal Nal Aye Rab. Psalm 51 is a renowned expression of repentance, and ode to the everlasting grace, and mercy of GOD. </p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bMbzJzBOjCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="songs">
+        <div class="songs-content">
+            <h1>Amazing Grace</h1>
+            <h3>John Newton</h3>
+            <p>One of the most popular Christian Hymns, talking about the wonderful mercies and grace God has endowed upon us....."For he saved a wretch like me"</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yjRlXilfJk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="songs">
+        <div class="songs-content">
+            <h1>Jangli Darakhtaon ke darmiyan</h1>
+            <h3>Gaun Shukra Guzari se Main</h3>
+            <p>
+                "Your name is like perfume,
+                Spreading fragrance everywhere,
+                In hardship, trouble, and defamation,
+                Becomes fragrant, just like you
+                I praise..."
+            </p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vScxNvTiNiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section class="songs">
+        <div class="songs-content">
+            <h1>Have You Been To Jesus</h1>
+            <h3>Elisha Hoffman</h3>
+            <p>Are you washed in the blood,
+                In the soul-cleansing blood of the Lamb?
+                Are your garments spotless? Are they white as snow?
+                Are you washed in the blood of the Lamb?</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mWg36BCD2mE?si=nh2I9ZWaZmvv6APB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevBtn = document.getElementById('prev-btn-about'); // Make sure this ID matches your "Previous" button in the HTML
+            const nextBtn = document.getElementById('next-btn-about'); // Make sure this ID matches your "Next" button in the HTML
+            
+            // Event listener for the "Previous" button
+            prevBtn.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                window.location.href = 'about.html'; // Navigate to the "About" page
+            });
+            
+            // Event listener for the "Next" button
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                window.location.href = 'family.html'; // Navigate to the "Family" page
+            });
+        });
+        </script>
+        
+</body>
+</html>

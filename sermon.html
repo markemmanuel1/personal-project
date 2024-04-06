@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs - Personal Portfolio</title>
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="C:\Users\Mark\OneDrive\Desktop\Mark\ADMIN\PERSONAL _PROJECT\Screenshot 2024-04-06 082017.png" alt="Image Description" class="logo"></a>
+        <nav class="navbar">
+                <a href="mainfile.html">HOME</a>
+                <a href="about.html">KNOW MORE</a>
+                <a href="songs.html" class="active">SONGS</a>
+                <a href="family.html">ORIGINS</a>
+                <a href="sermon.html" id="sermon-link">SERMON</a>
+        </nav>
+    </header>
+    <section class="songs">
+        <div class="songs-content">
+            <h1>"IT IS FINISHED"</h1>
+            <h3>A Good Friday Sermon</h3>
+            <p>Tune in to listen to the message "IT IS FINISHED" delivered on Good Friday in Green Park Free Church<p>
+            <div class="btn-box">
+                <a href="#" id="prev-btn-about">Previous</a>
+                <!-- <a href="#" id="next-btn-about">Next</a> -->
+            </div>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PuQbZsp4nRQ?si=PjMqe500u233MXk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.getElementById('prev-btn-about');
+    const nextBtn = document.getElementById('next-btn-about');
+    
+    // Example navigation URLs, adjust as needed
+    const links = ["songs.html", "family.html", "sermon.html"];
+    
+    // Function to navigate to the previous page
+    prevBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = links[1]; // Go to the first link (HOME)
+    });
+
+      
+});
+
+    </script>
+</body>
+</html>

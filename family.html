@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs - Personal Portfolio</title>
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="C:\Users\Mark\OneDrive\Desktop\Mark\ADMIN\PERSONAL _PROJECT\Screenshot 2024-04-06 082017.png" alt="Image Description" class="logo"></a>        
+        <nav class="navbar">
+            <a href="mainfile.html">HOME</a>
+            <a href="about.html">KNOW MORE</a>
+            <a href="songs.html" class="active">SONGS</a>
+            <a href="family.html">ORIGINS</a>
+            <a href="sermon.html" id="sermon-link">SERMON</a>
+        </nav>
+    </header>
+    <section class="family">
+        <div class="family-content">
+            <h1>HIMACHAL PRADESH</h1>
+            <h3>ST.JOHN'S IN THE WILDERNESS</h3>
+            <p>Mr. Emmanuel comes from Shahpur, Himachal Pradesh...A PAHADI man, through and through... His childhood,  His faith, and passion for Christ came from his upbringing, and the church where they worshipped, which is the ST.JOHN'S IN THE WILDERNESS
+            </p>
+            <div class="btn-box">
+                <!-- <a href="#" id="prev-btn-about">Previous</a>
+                <a href="#" id="next-btn-about">Next</a> -->
+            </div>
+        </div>
+        <img src="img5.JPG" alt="Image Description" class="home-img"> 
+    </section>
+    <!-- Family Section 2 -->
+    <section class="family2">
+        <div class="family-content">
+            <h1>UPBRINGING</h1>
+            <h3>Mary & Joseph</h3>
+            <p>A son promised to Mary, and Joseph, as an answer to vehement prayers to God...Emmanuel was born....
+                How poetic can it be? 
+                There were total of three other children, an older brother, and 2 younger sisters.                                                                                  
+                His mother was always a strong part of his maturity in Christ. She always ensured
+                that her children were aware of the love of Christ that had saved them. Through all of the tribulations, trials,
+                and temptations of the world God was always with them. Their family is an example of God's mysterious works and his living testimony
+                All of this made him the MAN OF GOD we all know him to be.</p>
+            <div class="btn-box">
+                <!-- <a href="#" id="prev-btn-family2">Previous</a>
+                <a href="#" id="next-btn-family2">Next</a> -->
+            </div>
+        </div>
+        <img src="img6.jpg" alt="Image Description" class="family-img"> 
+    </section>
+    <!-- Family Section 3 -->
+    <section class="family3">
+        <div class="family-content">
+            <h1>MARRIAGE</h1>
+            <h3>Sonia</h3>
+            <p>On May 26th 1947, God gave Mr. Emmanuel, Mrs. Sonia Emmanuel in holy matrimony. 
+               Just as God saw that Adam was alone, and made Eve, so is Mrs.Sonia to Mr.Emmanuel. 
+               A perfect partner, wife, friend, and a compass to God, Mrs.Sonia Emmanuel kept the family together as she still does.
+               Both found their other halves to be an answer to their prayers. 
+            </p>
+            <div class="btn-box">
+                <!-- <a href="#" id="prev-btn-family3">Previous</a>
+                <a href="#" id="next-btn-family3">Next</a> -->
+            </div>
+        </div>
+        <img src="img7.jpg" alt="Image Description" class="family-img"> 
+    </section>
+    <!-- Family Section 4 -->
+    <section class="family4">
+        <div class="family-content">
+            <h1>PARENTHOOD</h1>
+            <h3>The best father a child could ask for</h3>
+            <p>Mr. Emmanuel became a father on 24th June 2004... He has always provided the best for his family, 
+                especially for his son...
+               Through all the challenges and hurdles that come along with a growing kid at home...Like a strong wall of shield 
+               he stood up for his family, protecting them from everything. He has always been the spiritual shepherd of the family
+               who leads them to Christ. Just as paul says,'Imitate me as I imitate Christ', Mr. Emmanuel shows the reflection of 
+               Christ in his daily walk.....A huge inspiration for his son. No amount of words can express the feelings of his parenthood.
+
+            </p>
+            <div class="btn-box">
+                <a href="#" id="prevBtn">Previous</a>
+                <a href="#" id="nextBtn">Next</a>
+            </div>
+        </div>
+        <img src="img8.jpg" alt="Image Description" class="family-img"> 
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevBtn = document.getElementById('prevBtn'); // Corrected ID
+            const nextBtn = document.getElementById('nextBtn'); // Corrected ID
+            
+            // Ensure these URLs match your site's structure and are in the correct order
+            const links = ["mainfile.html", "about.html", "songs.html", "family.html", "sermon.html"];
+            
+            // Determine the current page index based on the URL
+            let currentPage = window.location.pathname.split('/').pop();
+            let currentPageIndex = links.indexOf(currentPage);
+        
+            // Navigate to the previous page
+            prevBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                let prevPageIndex = (currentPageIndex - 1 + links.length) % links.length;
+                window.location.href = links[prevPageIndex];
+            });
+            
+            // Navigate to the next page
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                let nextPageIndex = (currentPageIndex + 1) % links.length;
+                window.location.href = links[nextPageIndex];
+            });
+        });
+        </script>
+        
+</body>
+</html>

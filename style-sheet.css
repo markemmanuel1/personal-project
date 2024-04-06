@@ -1,0 +1,436 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo img {
+    height: 90px;
+    width: 100%;
+}
+
+.navbar a,
+.navbar a.active{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #00abf0;  
+}
+
+.home{
+    height: 100vh;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces out the items */
+    padding: 0 10%;
+    background: none;
+}
+
+.home-content{
+    /* background:yellowgreen; */
+    max-width: 600px;
+
+}
+
+.home-content, .home-img{
+    flex: 1;
+    padding: 20px;;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 45px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border:2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: #00abf0;
+
+}
+
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;    
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.home-img{
+    max-width: 600px;
+    height: 90vh;
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+
+/* .about-content, .scrollable-section {
+    max-width: 600px;
+    margin-bottom: 20px;
+} */
+
+.scrollable-section {
+    border: 1px solid #00abf0; /* Optional border */
+    padding: 20px;
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
+.scrollable-section img {
+    max-width: 100%; /* Ensure images do not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Shared styles for about, about2, and about3 sections */
+.about, .about2, .about3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: none;
+}
+
+/* Shared content styles for about, about2, and about3 */
+.about-content, .about2-content, .about3-content {
+    max-width: 600px;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Shared heading styles for about, about2, and about3 */
+.about-content h1, .about2-content h1, .about3-content h1,
+.about-content h3, .about2-content h3, .about3-content h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content h1, .about2-content h1, .about3-content h1 {
+    font-size: 56px;
+}
+
+.about-content h3, .about2-content h3, .about3-content h3 {
+    font-size: 32px;
+    color: #00abf0;
+}
+
+/* Shared paragraph styles for about, about2, and about3 */
+.about-content p, .about2-content p, .about3-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+/* Shared button box styles for about, about2, and about3 */
+.about-content .btn-box, .about2-content .btn-box, .about3-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+/* Shared image styles for about, about2, and about3 */
+.about-img, .about2-img, .about3-img {
+    max-width: 600px;
+    height: 90vh;
+    margin-top: 45px;
+    object-fit: cover;
+}
+
+
+
+.songs{
+    height: 100vh;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces out the items */
+    padding: 0 10%;
+    background: none;
+}
+
+.songs-content{
+    /* background:yellowgreen; */
+    max-width: 600px;
+
+}
+
+.songs-content, .home-img{
+    flex: 1;
+    padding: 20px;;
+}
+.songs-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.songs-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+
+}
+
+.songs-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.songs-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.songs-img{
+    max-width: 600px;
+    height: 90vh;
+    margin-top: 45px;
+    object-fit: cover;
+}
+
+.family, .family2, .family3, .family4{
+    height: 100vh;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces out the items */
+    padding: 0 10%;
+    background: none;
+}
+
+.family-content{
+    /* background:yellowgreen; */
+    max-width: 600px;
+
+}
+
+.family-content, .family-img{
+    flex: 1;
+    padding: 20px;;
+}
+.family-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.family-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+
+}
+
+.family-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.family-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.family-img{
+    max-width: 600px;
+    height: 90vh;
+    margin-top: 45px;
+    object-fit: cover;
+}
+
+.sermon{
+    height: 100vh;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    justify-content: space-between; /* Spaces out the items */
+    padding: 0 10%;
+    background: none;
+}
+
+.sermon-content{
+    /* background:yellowgreen; */
+    max-width: 600px;
+
+}
+
+.sermon-content, .family-img{
+    flex: 1;
+    padding: 20px;;
+}
+.sermon-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sermon-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+
+}
+
+.sermon-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.sermon-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.sermon-img{
+    max-width: 600px;
+    height: 90vh;
+    margin-top: 45px;
+    object-fit: cover;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Typography enhancements */
+body, p {
+    line-height: 1.6; /* Improved line spacing */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+/* Subtle box shadow for depth */
+.scrollable-section, .btn-box a {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Interactive elements: Button and link enhancements */
+a:hover, .btn-box a:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Improved navigation */
+.header {
+    background: rgba(8, 27, 41, 0.85); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Blur effect for background */
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .home-content h1, .songs-content h1, .family-content h1, .sermon-content h1 {
+        font-size: 36px; /* Smaller font size for h1 on small screens */
+    }
+    .navbar a {
+        margin-left: 20px; /* Reduce margin for navbar links */
+    }
+    .header, .home, .songs, .family, .sermon {
+        padding: 10px 5%; /* Adjust padding */
+    }
+}
+
+/* Ensure these new styles integrate smoothly with your existing CSS */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Personal Portfolio</title>
+    <link rel="stylesheet" href="style-sheet.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="C:\Users\Mark\OneDrive\Desktop\Mark\ADMIN\PERSONAL _PROJECT\Screenshot 2024-04-06 082017.png" alt="Image Description" class="logo"></a>        <nav class="navbar">
+            <a href="mainfile.html">HOME</a>
+            <a href="about.html">KNOW MORE</a>
+            <a href="songs.html" class="active">SONGS</a>
+            <a href="family.html">ORIGINS</a>
+            <a href="sermon.html" id="sermon-link">SERMON</a>
+        </nav>
+    </header>
+    <section class="about">
+        <div class="about-content">
+            <h1>INDIAN NAVY</h1>
+            <h3>AVIATION</h3>
+            <p>When he was not even 17 years old....Mr. Emmanuel left his home to join the Indian Navy. Always a curious child, somehow aviation caught his eye.
+               Mr.Emmanuel was a scholar since school, and showed his excellence in academics even while training.
+            </p>
+            <div class="btn-box">
+                <!-- <a href="#" id="prev-btn-about">Previous</a>
+                <a href="#" id="next-btn-about">Next</a> -->
+            </div>
+        </div>
+        <img src="img4.JPG" alt="Image Description" class="home-img">
+    </section>
+    <!-- New Section -->
+    <section class="about2">
+        <div class="about2-content">
+            <h1>SERVING THE NATION</h1>
+            <h3>CHIEF ARTIFICER</h3>
+            <p>For more than a decade, Mr.Emmanuel worked on aircrafts for the Indian Navy. During his service, he worked, and lived on the INS VIKRANT aircrat carrier.
+               He showed exemplary dedication, focus, and display of knowledge through his work, noticed by most of the peers and superiors. A lot of them also found a place 
+               of solace during desperate times, and a source of guidance and counselling in Mr. Emmanuel. His career was full of prestigious medals, and accolades. 
+               He left Indian Navy as the Chief Artificer, and as the pride of 300 squadron, "THE WHITE TIGERS".
+            </p>
+            <div class="btn-box">
+                <!-- <a href="#" id="prev-btn-journey">Previous</a>
+                <a href="#" id="next-btn-journey">Next</a> -->
+            </div>
+        </div>
+        <img src="img2.jpg" alt="Another Image Description" class="about2-img">
+    </section>
+    <section class="about3">
+        <div class="about3-content">
+            <h1>A HOME FAR FROM HOME</h1>
+            <h3>Kerala</h3>
+            <p>Mr. Emmanuel, due to his line of work spent most of his time, away from his home in Himachal.
+               Although he found brothers in a few friends, and their families took him as his own. 
+               Kerala became a new home for his life, and still holds a special place in his heart.
+               He used to spend most of the time in Wellingdon Island, Kochi, near the Kochi port.
+               Attending sunday church still remained a big part of life, in the CSI Immanuel Cathedral.
+            </p>
+            <div class="btn-box">
+                <a href="#" id="prev-btn-journey">Previous</a>
+                <a href="#" id="next-btn-journey">Next</a>
+            </div>
+        </div>
+        <img src="img3.jpg" alt="Another Image Description" class="about3-img">
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevBtnAbout = document.getElementById('prev-btn-about');
+            const nextBtnAbout = document.getElementById('next-btn-about');
+            // Assuming you may want to add navigation for the new section
+            const prevBtnJourney = document.getElementById('prev-btn-journey');
+            const nextBtnJourney = document.getElementById('next-btn-journey');
+            
+            const linksAbout = ["mainfile.html", "songs.html", "achievements.html", "family.html"];
+            const linksJourney = ["mainfile.html", "family.html"]; // Example, adjust as needed
+            
+
+            // Navigation for the new section
+            prevBtnJourney.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = linksJourney[0]; // Adjust accordingly
+            });
+
+            nextBtnJourney.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = linksJourney[1]; // Adjust accordingly
+            });
+        });
+    </script>
+</body

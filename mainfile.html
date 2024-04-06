@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Personal Portfolio
+        </title>
+        <link rel="stylesheet" href="style-sheet.css">
+        
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo"><img src="C:\Users\Mark\OneDrive\Desktop\Mark\ADMIN\PERSONAL _PROJECT\Screenshot 2024-04-06 082017.png" alt="Image Description" class="logo"></a>
+            <nav class="navbar">
+                <a href="mainfile.html">HOME</a>
+                <a href="about.html">KNOW MORE</a>
+                <a href="songs.html" class="active">SONGS</a>
+                <a href="family.html">ORIGINS</a>
+                <a href="sermon.html" id="sermon-link">SERMON</a>
+            </nav>            
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>
+                    HAPPY BIRTHDAY
+                </h1>
+                <h3>
+                    To the MAN, the MYTH, the LEGEND, Emmanuel P. Chand
+                </h3>
+                <p>
+                    Emmanuel P. Chand as known to you is a God-Fearing, hardworking, loving, compassionate man. 
+                    To know him more on his birthday go through this page
+                </p>
+                <div class="btn-box">
+                    <a href="#" id="prev-btn-about">Previous</a>
+                    <a href="#" id="next-btn-about">Next</a>
+                </div>
+            </div>
+            <div class="home-sci">
+            </div>
+            <img src="img1.JPG" alt="Image Description" class="home-img">
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const prevBtn = document.getElementById('prev-btn-about');
+            const nextBtn = document.getElementById('next-btn-about');
+            
+            // Adjusted navigation URLs, ensure these match your site's structure
+            const links = ["mainfile", "about.html", "songs.html", "achievements.html", "family.html"];
+            
+            let currentPageIndex = 0; // Assuming this script is on the first page in the order
+            
+            // Navigate to the previous page
+            prevBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Calculate the previous page index; wrap to the last if at the first
+                let prevPageIndex = (currentPageIndex - 1 + links.length) % links.length;
+                window.location.href = links[4];
+            });
+            
+            // Navigate to the next page
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Calculate the next page index; wrap to the first if at the last
+                let nextPageIndex = (currentPageIndex + 1) % links.length;
+                window.location.href = links[1];
+            });
+        });
+    </script>
+    </body>
+</html>
